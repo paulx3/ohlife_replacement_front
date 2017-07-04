@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>AddItemPage</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="close()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Time</ion-label>
+      <!--<ion-input type="text" [(ngModel)]="title"></ion-input>-->
+      <ion-datetime displayFormat="YYYY/MM/DD" pickerFormat="YYYY/MM/DD" [(ngModel)]="time"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Content</ion-label>
+      <ion-textarea fz-elastic [(ngModel)]="text"></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <button ion-button full color="secondary" (click)="saveItem()">Save</button>
+</ion-content>

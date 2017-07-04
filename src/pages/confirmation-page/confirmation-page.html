@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>ConfirmationPage</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+
+    <ion-card-header>
+      Activation Required
+    </ion-card-header>
+
+    <ion-card-content>
+      Your account hasn't been activated yet.<br>
+      Please check your Email and activate your account.<br>
+      If you can't receive email,please press the button below to resend one.<br>
+
+      <button ion-button [disabled]="disabled" color="light" (click)="resendEmail()">{{confirmText}}</button>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
