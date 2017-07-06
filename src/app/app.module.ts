@@ -17,6 +17,17 @@ import {SignupPage} from "../pages/signup-page/signup-page";
 import {HttpModule} from "@angular/http";
 import {Entries} from "../providers/entries";
 import {ConfirmationPage} from "../pages/confirmation-page/confirmation-page";
+import * as Raven from "raven-js";
+
+Raven
+  .config("https://33f615b02e56468aa878a04b0df6f037@sentry.io/187970")
+  .install();
+
+export class RavenErrorHandler implements ErrorHandler {
+  handleError(err: any): void {
+    Raven.captureException(err.originalError);
+  }
+}
 
 @NgModule({
   declarations: [
@@ -52,6 +63,8 @@ import {ConfirmationPage} from "../pages/confirmation-page/confirmation-page";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    {provide: ErrorHandler, useClass: RavenErrorHandler},
   ],
 })
-export class AppModule {}
+export class AppModule {
+}
