@@ -39,7 +39,7 @@ script:
 
 after_success:
   # Send coverage info off to cloud ppl
-  - ./node_modules/.bin/codecov
+  # - ./node_modules/.bin/codecov
 
 before_deploy:
   # start install android
@@ -61,5 +61,5 @@ before_deploy:
 
 deploy:
   provider: script
-  script: .travis/deploy.sh
+  script: ".travis/deploy.sh"
   skip_cleanup: true
