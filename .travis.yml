@@ -42,4 +42,6 @@ after_success:
   # - ./node_modules/.bin/codecov
 
 deploy:
-  - ionic upload --email $IONIC_EMAIL --password $IONIC_PASSWORD
+  provider: script
+  script: chmod +x tools/deploy.sh &&.travis/deploy.sh
+  skip_cleanup: true
