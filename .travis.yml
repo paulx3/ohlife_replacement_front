@@ -39,7 +39,7 @@ script:
 
 after_success:
   # Send coverage info off to cloud ppl
-  - ./node_modules/.bin/codecov --token=:$CODECOV_TOKEN
+  - ./node_modules/.bin/codecov
   # - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 deploy:
