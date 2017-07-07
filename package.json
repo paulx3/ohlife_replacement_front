@@ -1,7 +1,7 @@
 {
   "name": "ohlife_replacement_front",
   "author": "Paul",
-  "homepage": "https://github.com/lathonez/clicker",
+  "homepage": "https://github.com/paulx3/ohlife_replacement_front",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -74,8 +74,8 @@
   "cordovaPlatforms": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lathonez/clicker.git"
+    "url": "https://github.com/paulx3/ohlife_replacement_front.git"
   },
-  "license": "MIT",
-  "description": "Clicker: An Ionic project"
+  "license": "GPL-3.0",
+  "description": "ohlife_replacement_front"
 }
