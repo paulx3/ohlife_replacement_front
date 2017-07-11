@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/paulx3/ohlife_replacement_front.svg?token=6rs9jppsy6putyG6yr1E&branch=master)](https://travis-ci.com/paulx3/ohlife_replacement_front)
+[![Build Status](https://travis-ci.org/paulx3/ohlife_replacement_front.svg?branch=master)](https://travis-ci.org/paulx3/ohlife_replacement_front)
 [![codecov](https://codecov.io/gh/paulx3/ohlife_replacement_front/branch/master/graph/badge.svg)](https://codecov.io/gh/paulx3/ohlife_replacement_front)
 # Ohlife Replacement Front
 
